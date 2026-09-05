@@ -1,0 +1,24 @@
+warning: in the working copy of 'src/main/java/com/sv/tareas/repository/TaskRepository.java', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/src/main/java/com/sv/tareas/entity/Entity.java b/src/main/java/com/sv/tareas/entity/Entity.java[m
+[1mdeleted file mode 100644[m
+[1mindex d9c7ce9..0000000[m
+[1m--- a/src/main/java/com/sv/tareas/entity/Entity.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,4 +0,0 @@[m
+[31m-package com.sv.tareas.entity;[m
+[31m-[m
+[31m-public class Entity {[m
+[31m-}[m
+[1mdiff --git a/src/main/java/com/sv/tareas/repository/TaskRepository.java b/src/main/java/com/sv/tareas/repository/TaskRepository.java[m
+[1mindex 3d31754..1dc71ae 100644[m
+[1m--- a/src/main/java/com/sv/tareas/repository/TaskRepository.java[m
+[1m+++ b/src/main/java/com/sv/tareas/repository/TaskRepository.java[m
+[36m@@ -1,4 +1,7 @@[m
+ package com.sv.tareas.repository;[m
+ [m
+[31m-public class TaskRepository {[m
+[32m+[m[32mimport com.sv.tareas.entity.Task;[m
+[32m+[m[32mimport org.springframework.data.jpa.repository.JpaRepository;[m
+[32m+[m
+[32m+[m[32mpublic interface TaskRepository extends JpaRepository<Task, Long> {[m
+ }[m
